@@ -23,7 +23,10 @@ pluginManagement {
 
 plugins {
     id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    // Explicitly set the Android plugin version here to 7.3.0
     id "com.android.application" version "7.3.0" apply false
+    // Force the Kotlin plugin version globally
+    id "org.jetbrains.kotlin.android" version "1.8.0" apply false
 }
 
 include ":app"
